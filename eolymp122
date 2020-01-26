@@ -1,0 +1,36 @@
+n, k, a, b, d = map(int, input().split(' '))
+ways = int()
+list1 = list()
+ram_list = list()
+for i in range(k):
+    list1.append(input())
+
+
+if list1.count(str(a)+' '+str(b)) == 1:
+    ways += 1
+
+print(list1)
+
+
+for i1 in list1:
+
+    if i1[2] == str(b):
+        ways+=1
+
+    else:
+        if i1[0] == str(a):
+            print('i1')
+            print(i1)
+            ram_list.append(i)
+
+            print(ram_list)
+
+            # for i2 in ram_list:
+            #     print(i2)
+            #     print(i2)
+                # if i2[2] == str(b):
+                #     ways+=1
+    
+
+print(ram_list)
+print(ways)
