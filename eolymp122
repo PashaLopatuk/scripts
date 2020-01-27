@@ -30,7 +30,7 @@ for i1 in list1:
                     ways+=1
                 else:
                     for i3 in list1:
-                        for i_n in range(int( ram_list.index(ram_list[-1]) )+1):
+                        for i_n in range(int( ram_list.index(ram_list[-1]) )):
                             i333 = str(i3)
                             print( type(i333) )
                             print( type(i3) )
@@ -42,7 +42,5 @@ for i1 in list1:
                     for i4 in ram_list2:
                         if i4[2] == str(b):
                             ways+=1
-
-
 print(ram_list)
 print(ways)
